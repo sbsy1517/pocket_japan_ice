@@ -1,0 +1,758 @@
+*
+    position: relative
+html,body
+    width: 100%
+    // overflow-x: hidden
+    font-family: 'Noto Sans TC', 'sans-serif' !important
+    overflow-x: hidden
+
+header
+    // border: 1px solid #fff
+    h1 
+        position: absolute
+        z-index: -10
+        opacity: 0
+    .bgimg
+        
+        background-image: url(../source/img/header/header_lights_off.jpg)
+        background-size: cover
+        background-position: center bottom
+        min-height: 850px
+        +xl
+            min-height: auto
+            height: 900px
+        +sm
+            height: 568px
+        .black
+            background-color: black
+            height: 100%
+            width: 100%
+            position: absolute
+            animation: bgBlack 10s infinite
+        .illustration
+           
+            .lights
+                top: 0
+                left: 0
+                position: absolute
+                width: 100%
+                background-image: url(../source/img/header/lights.webp)
+                background-size: cover
+                background-position: center bottom
+                height: 100vh
+                min-height: 850px
+                animation: houseLight 10s infinite
+                +xl
+                    min-height: auto
+                    height: 900px
+                +sm
+                    height: 568px
+            .forest
+                top: 0
+                left: 0
+                position: absolute
+                width: 100%
+                background-image: url(../source/img/header/forest.webp)
+                background-size: cover
+                background-position: center bottom
+                height: 100vh
+                min-height: 850px
+                +xl
+                    min-height: auto
+                    height: 900px
+                +sm
+                    height: 568px
+            .firefly
+                top: 0
+                left: 0
+                position: absolute
+                width: 100%
+                background-image: url(../source/img/header/firefly.webp)
+                background-size: cover
+                background-position: center bottom
+                height: 100vh
+                min-height: 850px
+                animation: houseLight 30s infinite, fireflyMoving 30s infinite
+                +xl
+                    min-height: auto
+                    height: 900px
+                +sm
+                    height: 568px
+            .smog
+                top: -100px
+                left: -100px
+                position: absolute
+                width: 120%
+
+                background-image: url(../source/img/header/smog.webp)
+                background-size: cover
+                background-position: center bottom
+                height: 110% 
+                min-height: 850px
+                animation: smogMoving 20s infinite
+                +xl
+                    min-height: auto
+                    height: 900px
+                +sm
+                    height: 568px
+            .ghost_fire_main
+                background-image: url(../source/img/header/allfire.webp)
+                background-size: cover
+                background-position: center bottom
+                height: 100vh
+                min-height: 850px
+                animation: houseLight 25s infinite, fireLight 20s infinite
+                top: -80px
+                +xl
+                    min-height: auto
+                    height: 900px
+                +sm
+                    height: 568px
+            .well_light
+                bottom: 80px
+                left: 0
+                position: absolute
+                width: 70%
+                +x-center
+                background-image: url(../source/img/header/well_light.webp)
+                background-size: cover
+                background-position: center center
+                height: 80vh
+                min-height: 800px
+                animation: wellLight 20s infinite
+                +xl
+                    min-height: auto
+                    height: 600px
+                    bottom: 90px
+                +sm
+                    height: 400px
+                    bottom: 40px
+            .well
+                bottom: 80px
+                left: 0
+                position: absolute
+                width: 70%
+                +x-center
+                background-image: url(../source/img/header/well.webp)
+                background-size: cover
+                background-position: center center
+                height: 80vh
+                min-height: 800px
+                +xl
+                    min-height: auto
+                    height: 600px
+                    bottom: 90px
+                +sm
+                    height: 400px
+                    bottom: 40px
+                
+            .ghost
+                bottom: 80px
+                left: 0
+                position: absolute
+                width: 70%
+                +x-center
+                background-image: url(../source/img/header/ghost.webp)
+                background-size: cover
+                background-position: center center
+                height: 80vh
+                min-height: 800px
+                animation: mainGhostTwo 20s infinite
+                +xl
+                    min-height: auto
+                    height: 600px
+                    bottom: 90px
+                +sm
+                    height: 400px
+                    bottom: 40px
+    .wrap
+        display: flex
+        justify-content: space-evenly
+        text-align: center
+        margin-top: 60px
+        top: 0
+        font-family: 'Noto Serif TC', sans-serif
+        // border: 1px solid #fff
+        position: absolute
+        width: 80%
+        color: $color_white
+        align-items: center
+        
+        +x-center
+        +lg
+            flex-direction: column
+        .left_underlg
+            display: none
+            +lg
+                display: block
+        .left
+            // border: 1px solid #eeeeee
+            width: 380px
+            font-size: 20px
+            line-height: 2
+            letter-spacing: 2px
+            font-weight: 500
+            margin-right: 80px
+
+            +lg
+                display: none
+        .title 
+            width: 120px
+            position: absolute
+            top: 0px
+            left: 50%
+            transform: translateX(-60%) 
+            +lg
+                top: 50px
+        .title#title_one
+            +sm
+                display: none   
+        .title#title_two
+            width: 280px
+            top: 50px
+            display: none
+            transform: translateX(-50%)
+            +sm
+                display: block
+        .right
+            // border: 1px solid #eeeeee
+            width: 380px
+            font-size: 20px
+            line-height: 2
+            letter-spacing: 2px
+            font-weight: 500
+            margin-left: 80px
+            +lg
+                display: none
+    .audio_wraper
+        position: absolute
+        bottom: 30px
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-family:  'Noto Sans TC', sans-serif 
+        +lg
+            position: relative
+            background-color: black
+            bottom: auto
+            
+        .container
+
+            audio.story_player
+                height: 40px
+                +x-center
+                +lg
+                    height: 60px
+
+                
+        +x-center
+        .audio_title
+            color: $color_white
+            text-align: center
+            font-size: 20px
+            line-height: 2
+            letter-spacing: 2px
+            font-weight: 500
+            font-family: 'Noto Serif TC', serif
+            +lg
+                margin-top: 50px
+            +sm
+                font-size: 15px
+        .story_player
+            margin-top: 10px
+        .left_underlg,.right_underlg
+            width: 380px
+            font-size: 20px
+            line-height: 2
+            letter-spacing: 3px
+            font-weight: 200
+            display: none
+            text-align: center
+            color: $color_white
+            font-family: 'Noto Serif TC', serif
+            font-weight: 500
+            +lg
+                display: block
+            +md
+                letter-spacing: 2px
+            +sm
+                font-size: 15px
+.header_btm
+    background-image: url(../source/img/header/header_btm.webp)
+    background-color: black
+    height: 180px
+    background-size: cover
+    background-position: bottom -30px right
+    z-index: -1
+    +xl
+        height: 100px
+    +lg
+        height: 150px
+    +md
+        height: 130px
+section#plates
+    .firefly::-webkit-scrollbar
+        display: none
+    .bg_section
+        padding-top: 40px
+        background-image: url(../source/img/header/bg_below.jpg)
+        background-size: cover
+        background-position: bottom center
+        position: absolute
+        width: 100%
+        height: 100vh 
+        +xl
+            height: 900px
+            
+    .firefly
+        padding-top: 40px
+        width: 100%
+        background-image: url(../source/img/header/firefly.webp)
+        background-size: cover
+        background-position: bottom center
+        position: sticky
+        height: 100vh
+        overflow-x: scroll     
+        font-family: 'Noto Serif TC', serif
+        +xl
+            height: 900px
+        .container
+            padding-top: 60px
+            +md
+                padding-top: 30px
+            .plate
+                display: flex
+            
+                
+                img#plate
+                    width: 500px
+                    +xl
+                        width: 400px
+                    +lg
+                        width: 350px
+                    +md
+                        width: 300px
+                        
+                img#ice
+                    position: absolute
+                    width: 380px
+                    +center
+                    +xl
+                        width: 300px
+                    +lg
+                        width: 250px
+                img#detail_one
+                    width: 420px
+                    transform: translate(-160px, -80px)
+                    +xl
+                        display: none
+                img#detail_two
+                    width: 360px
+                    transform: translate(100px, 10px)
+                    z-index: 2
+                    +xl
+                        display: none
+
+                p#describe
+                    line-height: 2
+                    font-size: 20px
+
+
+            #plate_one
+                +xl
+                    margin-bottom: 120px
+                +md
+                    margin-bottom: 80px
+                +sm
+                    flex-direction: column
+                    align-items: center
+                    margin-bottom: 100px
+                .wrap
+                    cursor: pointer
+                .line
+                    display: none
+                    border-top: 2px solid #ffffff
+                    align-self: center
+                    width: 60px
+                    margin-left: 40px
+                    +xl
+                        display: block
+                    +md
+                        display: none
+                p.intro
+                    display: none
+                    line-height: 2
+                    font-size: 20px
+                    align-self: center
+                    text-align: left
+                    margin-left: 40px
+                    +xl
+                        display: block
+                    +md
+                        letter-spacing: 2px
+                    +sm
+                        text-align: center
+                        margin-top: 10px
+                        font-size: 20px
+                        margin-left: 0
+                    
+            #plate_two
+                +xl
+                    margin-bottom: 120px
+                +md
+                    margin-bottom: 80px
+                +sm
+                    flex-direction: column
+                    align-items: center
+                    margin-bottom: 100px
+                p.intro
+                    display: none
+                    line-height: 2
+                    font-size: 20px
+                    align-self: center
+                    text-align: right
+                    margin-right: 40px
+                    +xl
+                        display: block
+                    +md
+                        letter-spacing: 2px
+                p.intro.over_sm
+                    +sm
+                        display: none
+                p.intro.under_sm
+                    display: none
+                    +sm
+                        display: block
+                        text-align: center
+                        margin-top: 10px
+                        font-size: 20px
+                        margin-right: 0
+
+                
+                .line
+                    display: none
+                    border-top: 2px solid #ffffff
+                    align-self: center
+                    width: 60px
+                    margin-right: 40px
+                    +xl
+                        display: block
+                    +md
+                        display: none
+                .wrap
+                    img.berry
+                        width: 450px 
+                        +xl
+                            width: 380px 
+                        +lg
+                            width: 300px  
+
+            #plate_three
+                align-items: center
+                +xl
+                    margin-bottom: 120px
+                +md
+                    margin-bottom: 80px
+                +sm
+                    flex-direction: column
+                    align-items: center
+                    margin-bottom: 100px
+                .wrap
+                    img#plate
+                        width: 500px
+                        +xl
+                            width: 400px
+                        +lg
+                            width: 300px
+                        +md
+                            width: 280px
+                    img.page
+                        width: 200px
+                        +xl
+                            width: 150px
+                        +lg
+                            width: 100px
+                p.stories
+                    margin-left: 20px
+                    text-align: left
+                    +md
+                        letter-spacing: 2px
+                    +sm
+                        text-align: center
+                        margin-top: 10px
+                        font-size: 15px
+                    span.over_small
+                        +sm
+                            display: none
+                    span.under_small
+                        display: none
+                        +sm
+                            display: block
+
+            #plate_four
+                align-items: center
+                +lg
+                    flex-direction: column
+                p.ig_story
+                    text-align: right
+                    +lg
+                        text-align: center
+                    +md
+                        letter-spacing: 2px
+                    +sm
+                        font-size: 15px
+                    .over_lg
+                        +lg
+                            display: none
+                    .under_lg
+                        display: none
+                        +lg
+                            display: block
+                        
+                    
+                .wrap
+                    img#plate
+                        width: 600px
+                        +xl
+                            width: 450px
+                        +sm
+                            width: 300px 
+                    .inside_wrap
+                        position: absolute
+                        +center
+                        #ig
+                            display: flex
+                            justify-content: center
+                            height: 200px
+                            +xl
+                                height: 170px
+                            +sm
+                                height: 100px
+                            p
+                                position: absolute
+                                font-size: 30px
+                                color: $color_white
+                                z-index: 9
+                                font-weight: 700
+                            p#p-one
+                                right: 8px
+                                bottom: 8px
+                            p#p-two
+                                left: 8px
+                                bottom: 8px
+                            p#p-three
+                                top: 8px
+                                right: 8px
+                            p#p-four
+                                top: 8px
+                                left: 8px
+                            img
+                                width: 200px
+                                +xl
+                                    width: 170px
+                                +sm
+                                    width: 100px
+                                &:hover
+                                    transform: scale(1.2)
+                                    transition-duration: 0.2s
+                                    z-index: 10
+
+            #plate_five
+                justify-content: center
+                margin: 70px 0px
+                
+                // border: 1px solid white
+                img#plate
+                    width: 300px
+                h3
+                    +center
+                    position: absolute
+                    color: $color_white
+                    text-align: center
+                    margin-top: 20px
+                    font-size: 30px
+                    letter-spacing: 5px
+                    font-weight: 600
+
+
+            #plate_two,#plate_four
+                justify-content: flex-end
+            
+                
+            .paper
+                margin-top: 70px
+                img
+                    width: 100%
+                .overlg
+                    +lg
+                        display: none
+                .underlg
+                    display: none
+                    +lg
+                        display: block
+            p
+                text-align: center
+                color: $color_white
+                letter-spacing: 4px
+            p.find
+                font-size: 20px
+                +sm
+                    font-size: 15px
+            section#ig
+                margin-top: 0px
+                .container
+                    padding-top: 40px
+                    .wrap
+                        display: flex
+                        justify-content: space-evenly
+                        flex-wrap: wrap
+                        width: 100%
+                        .under_lg
+                            +lg
+                                display: none
+                        .under_sm
+                            +sm
+                                display: none
+                        .img_test
+                            height: 250px
+                            width: 250px
+                            margin-bottom: 20px
+                            background-color: $color_white
+                            border: 1px solid #000
+                            +xl
+                                height: 200px
+                                width: 200px
+                            &:hover
+                                transition-duration: 0.2s
+                                transform: scale(1.04)
+                                // box-shadow: 0 10px 20px #f3f3f330, 0 6px 6px #ffffff3b
+            footer
+                
+                    
+                margin-top: 100px 
+                +md
+                    margin-top: 0px
+                .container.logo_image
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    filter: drop-shadow(0 10px 20px rgba(0,0,0))
+                    +xl
+                        display: block
+                        .wraper
+                            display: flex
+                            justify-content: center
+                            margin-bottom: 80px
+                            +md
+                                margin-bottom: 40px
+                    img
+                        width: 300px
+                        height: 100%
+                    .logo
+                        position: absolute
+                        left: 0
+                        height: auto
+                        width: 160px
+                        +center
+                .container.footer_btm
+                    display: flex
+                    justify-content: center
+                    align-content: center
+                    margin-top: 100px
+
+                    +md
+                        flex-direction: column
+                        align-items: center
+                        margin-top: 40px
+                    +sm
+                        margin-top: 50px
+                    // +md
+                    //     display: block
+                    a.logo
+                        margin-right: 60px
+                        +md
+                            margin-right: 0
+                        img
+                            +x-center
+                            height: 100px
+                            // +md
+                            //     height: 70px
+                    .line
+                        border-right: 0.5px solid #888888
+                        margin-right: 60px
+                        // +md
+                        //     display: none
+                    // hr
+                    //     display: none
+                    //     +md
+                    //         display: block
+                    .wraper
+
+                        p
+                            font-size: 20px
+                            margin-top: 20px
+                            color: $color_red
+                            font-weight: 600
+                            font-family: 'Noto Sans TC', sans-serif
+                            letter-spacing: 2px
+                            // +md
+                            //     font-size: 20px
+                            //     margin-top: 40px
+                        .wraper_inside
+                            margin-top: 20px
+                            // +md
+                            //     text-align: center
+                            //     margin-top: 10px
+                            +md
+                                margin-top: 10px
+                            a.fab
+                                font-size: 35px
+                                padding: 20px
+                                color: $color_grey
+                                text-decoration: none
+                                &:hover 
+                                    color: $color_pink
+                p.microad
+                    margin: 50px 0px
+                    text-align: center
+                    margin-top: 30px
+                    font-size: 15px
+                    font-family: 'Noto Sans TC', sans-serif
+
+.small_ghost
+    position: fixed
+    right: 100px 
+    bottom: 100px
+    cursor: pointer 
+    +md
+        right: 50px
+        bottom: 50px
+    +sm
+        right: 30px
+        bottom: 30px
+    img
+        width: 140px     
+        z-index: 20 
+        +xl
+            width: 100px
+        +md
+            width: 80px
+        +sm
+            width: 50px
+    p
+        text-align: center
+        font-size: 20px
+        color: $color_white
+        letter-spacing: 4px
+        margin-top: 10px
+        +sm
+            font-size: 10px
+            letter-spacing: 0
+            margin-top: 5px
+          
+    
+    
+                                
+
+            
+    

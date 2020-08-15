@@ -1,0 +1,121 @@
+@keyframes mainGhost {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px) translateY(0px);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateX(-10px) translateY(30px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px) translateY(20px);
+  }
+  80% {
+    opacity: 0.3;
+    transform: translateX(40px) translateY(10px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(30px) translateY(10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px) translateY(0px);
+  }
+}
+@keyframes smogMoving {
+  0% {
+    transform: translateX(-100px) translateY(0px);
+  }
+  20% {
+    transform: translateY(60px) translateX(-50px);
+  }
+  45% {
+    transform: translateY(80px) translateX(-10px);
+  }
+  55% {
+    transform: translateY(60px) translateX(10px);
+  }
+  70% {
+    transform: translateY(50px) translateX(40px);
+  }
+  90% {
+    transform: translateY(40px) translateX(-50px);
+  }
+  100% {
+    transform: translateY(0px) translateX(-100px);
+  }
+}
+@keyframes houseLight {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bgBlack {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  46% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  56% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fireLight {
+  0% {
+    transform: translateX(-100px) translateY(0px);
+  }
+  20% {
+    transform: translateY(60px) translateX(-50px);
+  }
+  45% {
+    transform: translateY(80px) translateX(-10px);
+  }
+  55% {
+    transform: translateY(60px) translateX(10px);
+  }
+  70% {
+    transform: translateY(50px) translateX(40px);
+  }
+  90% {
+    transform: translateY(40px) translateX(-50px);
+  }
+  100% {
+    transform: translateY(0px) translateX(-100px);
+  }
+}

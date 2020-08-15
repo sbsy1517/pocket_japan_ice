@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        title 桌上談冰
+        meta(charset="UTF-8")
+        meta(name="description" content="測試")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(property="og:url" content="https://pocketjapan.tw/")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content="桌上談冰")
+        meta(property="og:image" content="")
+        
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" ,integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" ,crossorigin="anonymous")
+        link(rel="stylesheet", href="style/all.css")
+        
+        //-----------------------
+        header
+            h1 桌上談冰
+            
+            .bgimg
+                .black
+                .illustration
+                    .lights
+                    .forest
+                    .firefly
+                    .smog
+                    .ghost_fire_main
+                    .well_light
+                    .well
+                    .ghost
+                    
+            .wrap
+                
+                .left 從江戶時代開始
+                    br
+                    |大家聚在一起聽怪談開始風行
+                    br
+                    |也被認為是降溫的好活動
+                    br 
+                    |日星月移，從江戶來到令和
+                    br 
+                    |場景從日本來到了台北
+                img(src="source/img/header/title.webp", alt="").title#title_one
+                img(src="source/img/header/title_two.webp", alt="").title#title_two
+                .right 現在高溫38度
+                    br
+                    |口袋日本邀請您上桌來
+                    br
+                    |跟著井底女鬼阿菊
+                    br
+                    |配著口袋日本特選的日式刨冰
+                    br
+                    |聽一段日本最古老的水井怪談.....
+            .audio_wraper
+                p.left_underlg 從江戶時代開始
+                    br
+                    |大家聚在一起聽怪談開始風行
+                    br
+                    |也被認為是降溫的好活動
+                    br 
+                    |日星月移，從江戶來到令和
+                    br 
+                    |場景從日本來到了台北
+                p.right_underlg 現在高溫38度
+                    br
+                    |口袋日本邀請您上桌來
+                    br
+                    |跟著井底女鬼阿菊
+                    br
+                    |配著口袋日本特選的日式刨冰
+                .container
+                    .audio_title 來聽聽從室町時代流傳下來的怪談...
+                    audio.story_player(controls src="source/audio/ice.mp3")
+
+                
+                                
+
+
+        .header_btm
+        section#plates
+            .bg_section
+            .firefly
+                
+                .container
+                    .plate#plate_one
+                        //- img#detail_zero(src="source/img/plate/cream_honey.svg")
+                        .wrap.shake-slow.shake-freeze
+                            img#plate(src="source/img/plate/plate_one.webp", alt="")
+                            img.matcha#ice(src="source/img/plate/ice_matcha.webp", alt="")
+                        .line
+                        p.intro 特製奶霜
+                            br
+                            | 靜岡抹茶醬
+                            br
+                            | 台灣傳統愛玉
+                            br
+                            | 酸甜百香果
+                            br
+                            | 香純蜂蜜
+                            br
+                            | 解膩清爽檸檬汁
+                        img#detail_one(src="source/img/plate/ice_one_detail.svg", alt="")
+                        
+                    .plate#plate_two
+                        img#detail_two(src="source/img/plate/ice_two_detail.svg", alt="")
+                        p.intro.over_sm 手工桑葚莓果醬
+                            br
+                            | 新鮮葡萄
+                            br
+                            | 寒天珍珠
+                            br
+                            | 日式白玉糰子
+                        .line
+                        .wrap.shake-slow.shake-freeze
+                            img#plate(src="source/img/plate/plate_two.webp", alt="")
+                            img.berry#ice(src="source/img/plate/ice_berry.webp", alt="")
+                        p.intro.under_sm 手工桑葚莓果醬
+                            br
+                            | 新鮮葡萄
+                            br
+                            | 寒天珍珠
+                            br
+                            | 日式白玉糰子
+                    .plate#plate_three
+                        a(href="https://pocketjapan.tw/" title="來看看更多文章！" target="_blank").wrap.shake-slow.shake-freeze
+                            img#plate(src="source/img/plate/plate_three.webp", alt="")
+                            img.page#ice(src="source/img/plate/page.webp", alt="")
+                        p.stories#describe 
+                            span.under_small ↑
+                            |聽完廣播故事還意猶未盡？
+                            br 
+                            |這裡還有更多鬼故事來為冰品調味
+                            br
+                            span.over_small ←
+                    .plate#plate_four
+                        p.ig_story#describe 聽說，有人在IG裡找到阿菊了
+                            span.over_lg →
+                            br
+                            |快拿起手機，拍下你的第一個靈異限時動態
+                            br
+                            |4款IG濾鏡
+                            br
+                            |不管吃冰自拍都涼...涼...的... 
+                            br
+                            span.under_lg ↓
+                        .wrap
+                            img#plate.shake-slow.shake-constant(src="source/img/plate/plate_four.webp", alt="")
+                            .inside_wrap
+                                .wrap_up#ig
+                                    a(href="#")
+                                        img(src="source/img/plate/igone.webp", alt="")
+                                        p#p-one 1
+                                    a(href="#")
+                                        img(src="source/img/plate/igtwo.webp", alt="")
+                                        p#p-two 2
+                                .wrap_down#ig
+                                    a(href="#")
+                                        img(src="source/img/plate/igthree.webp", alt="")
+                                        p#p-three 3
+                                    a(href="#")
+                                        img(src="source/img/plate/igfour.webp", alt="")
+                                        p#p-four 4
+                    .paper
+                        img#paper.overlg(src="source/img/plate/paper_rule.webp", alt="")   
+                        img#paper.underlg(src="source/img/plate/paper_rule_underlg.webp") 
+                    .plate#plate_five
+                        img#plate(src="source/img/plate/plate_five.webp")
+                        h3 #桌上談冰
+                    p.find.shake-constant.shake-little 大家都...找到阿菊了...
+                    section#ig
+                        .container
+                            .wrap
+                                a(href="#").img_test
+                                a(href="#").img_test
+                                a(href="#").img_test
+                                a(href="#").img_test
+                                a(href="#").img_test.under_sm
+                                a(href="#").img_test.under_sm
+                                a(href="#").img_test.under_lg
+                                a(href="#").img_test.under_lg
+                                //- img(src="#", alt="")
+                                //- img(src="#", alt="")
+                                //- img(src="#", alt="")
+                                //- img(src="#", alt="")
+                                
+                                //- img(src="#", alt="")
+                                //- img(src="#", alt="")
+                                //- img(src="#", alt="")
+                                //- img(src="#", alt="")
+
+                    footer
+                        .container.logo_image
+                            a(href="https://www.facebook.com/jabintw/" target="_blank" title="點冰室粉絲專頁").wraper.shake-slow
+                                img(src="source/img/plate/plate_two.webp", alt="")
+                                img.logo#jabin(src="source/img/logo/jabin.png", alt="")
+                            a(href="https://pocketjapan.tw/" target="_blank" title="快來口袋日本逛逛!").wraper.shake-slow
+                                img(src="source/img/plate/footer_one.webp", alt="" )
+                                img.logo.pocket(src="source/img/logo/pocket.png", alt="")
+                            a(href="https://www.facebook.com/catdogiceroom/" target="_blank" title="貓狗冰室粉絲專頁").wraper.shake-slow
+                                img.catdogPlate(src="source/img/plate/plate_four.webp", alt="")
+                                img.logo(src="source/img/logo/catdogice.webp", alt="")
+                        .container.footer_btm
+                            a(href="https://pocketjapan.tw/" target="_blank" title="快來口袋日本逛逛!").logo
+                                img.pocketjapan(src="source/img/logo/pocket2.png", alt="")
+                            .line
+                            .wraper
+                                p Follow Us On
+                                .wraper_inside
+                                    a(href="https://www.facebook.com/pocketjapan.tw/" target="_blank" title="快來按讚追蹤我們!").fab.fa-facebook-f
+                                    a(href="https://www.instagram.com/pocketjapan.tw/?hl=zh-tw" target="_blank" title="快來追蹤我們!").fab.fa-instagram
+                        p.microad © 2020 MICROAD, INC.
+                        
+        .small_ghost.shake-little
+            img(src="source/img/header/back_to_top.webp", alt="")
+            p 回到頂端
+              
+
+                    
+                
+            
+
+
+
+
+
+
+
+
+        //---------------------
+        script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous")
+        script(src="js/all.js")
+    body
